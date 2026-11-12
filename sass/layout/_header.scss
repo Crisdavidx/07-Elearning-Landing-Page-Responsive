@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as *;
+
+header.header-principal {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include reset-list();
+  }
+}

@@ -1,0 +1,7 @@
+@use "../abstracts/_mixins" as *;
+.button {
+  @include button();
+}
+.gradiant-p-o {
+  @include button-pink-orange;
+}

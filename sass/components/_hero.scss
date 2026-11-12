@@ -1,0 +1,83 @@
+@use "../abstracts/variables" as *;
+.hero {
+  margin: 0;
+  padding: 0;
+  .title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    color: $color-blue-king;
+    width: 400px;
+    line-height: 51px;
+  }
+  .subtitle {
+    color: $color-gris;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+  .gradiant-p-o {
+    margin-bottom: 70px;
+  }
+  .image_hero {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 70px;
+    text-align: center;
+    position: relative;
+
+    & img {
+      width: 80%;
+    }
+
+    .h_number1 {
+      max-width: 155px;
+      height: 100px;
+      border-radius: 10px;
+      padding: 16px 45px 16px 20px;
+      box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.16);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .h_number2 {
+      width: 105px;
+      height: 100px;
+      border-radius: 10px;
+      padding: 16px 20px 16px 20px;
+      box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.16);
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .hero_n {
+    display: inline-block;
+    width: min-content;
+    background-color: $color-white;
+    padding: 5px;
+    text-align: left;
+  }
+
+  span {
+    display: block;
+  }
+  .title_number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: $color-gris;
+  }
+  .p_number {
+    color: $color-blue-king;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
