@@ -61,3 +61,11 @@
   @include button();
   background-image: $gradient-blue-pink;
 }
+@mixin button_link() {
+  color: $color-pink;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+}
