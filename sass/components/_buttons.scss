@@ -1,20 +1,30 @@
 @use "../abstracts/_mixins" as *;
+@use "../abstracts/variables" as *;
 .button {
   @include button();
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
   list-style: none;
+  &:hover {
+    background-color: rgba(102, 108, 163, 1);
+  }
   @include breakpoint(desktop) {
     font-size: 18px;
     margin-left: 165;
   }
 }
 .gradiant-p-o {
-  @include button-pink-orange;
+  @include button-pink-orange();
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
+  &:hover {
+    background:
+      linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  }
+
   @include breakpoint(desktop) {
     font-size: 18px;
     margin-left: 165;
@@ -24,5 +34,18 @@
   @include button_link();
   @include breakpoint(desktop) {
     font-size: 18px;
+  }
+}
+.button_footer {
+  @include button-pink-blue();
+  text-decoration: none;
+  color: $color-white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  &:hover {
+    background:
+      linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+      linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
   }
 }

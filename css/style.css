@@ -16,6 +16,9 @@
   line-height: 28px;
   list-style: none;
 }
+.button:hover {
+  background-color: rgb(102, 108, 163);
+}
 @media (max-width: 1920px) and (min-width: 1025px) {
   .button {
     font-size: 18px;
@@ -34,6 +37,9 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
+}
+.gradiant-p-o:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
 }
 @media (max-width: 1920px) and (min-width: 1025px) {
   .gradiant-p-o {
@@ -54,6 +60,24 @@
   .button_link {
     font-size: 18px;
   }
+}
+
+.button_footer {
+  display: inline-block;
+  padding: 16px 24px;
+  color: #fcfcff;
+  background-color: #13183f;
+  border-radius: 30px;
+  text-decoration: none;
+  background-image: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+  text-decoration: none;
+  color: #fcfcff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+.button_footer:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
 }
 
 .hero {
@@ -267,9 +291,8 @@
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 600px;
-    position: relative;
-    top: -300px;
+    margin-top: -200px;
+    margin-bottom: 80px;
   }
 }
 @media (max-width: 1920px) and (min-width: 1025px) {
@@ -277,9 +300,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 975px;
-    position: relative;
-    top: 300px;
+    margin-top: 300px;
   }
 }
 .activities_title {
@@ -384,28 +405,13 @@
 }
 @media (max-width: 1920px) and (min-width: 1025px) {
   .cont_footer {
-    margin-top: 180px;
+    position: relative;
+    bottom: 0px;
   }
 }
 .cont_footer .logo_f {
   width: 89px;
   height: 36px;
-}
-.cont_footer .button_footer {
-  display: inline-block;
-  padding: 16px 24px;
-  color: #fcfcff;
-  background-color: #13183f;
-  border-radius: 30px;
-  text-decoration: none;
-  background-image: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
-}
-.cont_footer .button_footer a {
-  text-decoration: none;
-  color: #fcfcff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
 }
 
 .header-principal {
@@ -460,9 +466,16 @@ html * {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   overflow-x: hidden;
   font-size: 16px;
   background-image: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+main {
+  flex: 1;
 }
 
 body .img-responsive {
